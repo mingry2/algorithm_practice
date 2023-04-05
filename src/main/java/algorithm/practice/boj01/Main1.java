@@ -1,4 +1,4 @@
-package boj01;
+package algorithm.practice.boj01;
 
 import java.io.BufferedReader;
 import java.io.IOException;

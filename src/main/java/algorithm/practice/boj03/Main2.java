@@ -1,4 +1,4 @@
-package boj03;
+package algorithm.practice.boj03;
 
 import java.util.Scanner;
 

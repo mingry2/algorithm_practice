@@ -1,4 +1,4 @@
-package boj03;
+package algorithm.practice.boj03;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

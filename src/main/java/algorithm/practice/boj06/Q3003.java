@@ -3,28 +3,35 @@ package algorithm.practice.boj06;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Q3003 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		StringTokenizer st = new StringTokenizer(br.readLine());
+		int king = 1;
+		int queen = 1;
+		int rook = 2;
+		int bishop = 2;
+		int knight = 2;
+		int pawn = 8;
 
-		int[] chessPiece = new int[]{1,1,2,2,2,8};
-		int[] arr = new int[6];
-		int[] result = new int[6];
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
-		for (int i = 0; i < arr.length; i++) {
-			arr[i] += Integer.parseInt(st.nextToken());
-		}
+		king = king - Integer.parseInt(st.nextToken());
+		queen = queen - Integer.parseInt(st.nextToken());
+		rook = rook - Integer.parseInt(st.nextToken());
+		bishop = bishop - Integer.parseInt(st.nextToken());
+		knight = knight - Integer.parseInt(st.nextToken());
+		pawn = pawn - Integer.parseInt(st.nextToken());
 
-		for (int i = 0; i < chessPiece.length; i++) {
-			result[i] = chessPiece[i] - arr[i];
-		}
+		System.out.print(king + " ");
+		System.out.print(queen + " ");
+		System.out.print(rook + " ");
+		System.out.print(bishop + " ");
+		System.out.print(knight + " ");
+		System.out.print(pawn + " ");
 
-		System.out.print(Arrays.toString(result));
 
 	}
 
